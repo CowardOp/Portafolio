@@ -1,5 +1,5 @@
 <template>
-    <div class="about w-full p-8 md:p-4 md:flex justify-center items-center">
+    <div class="about h-[100vh] w-full pt-8 pe-2 ps-[70px] md:ps-[85px] md:p-4 md:flex justify-center items-center">
         <div class="relative w-full lg:w-4/5 xl:w-1/2 h-full md:h-3/4 perspective bg-gray-800 rounded-2xl drop-shadow-2xl"
             @click="flipCard">
             <div :class="['card', flipped ? 'flipped' : '']">
@@ -11,7 +11,7 @@
                 <div
                     class="card-back absolute w-full h-full backface-hidden  flex flex-col gap-5 py-5 px-4 md:p-8 xl:gap-11">
                     <h2 class="text-white text-3xl md:text-5xl xl:text-6xl ">Quien soy?</h2>
-                    <p class="md:text-3xl md:text-center text-white text-justify">
+                    <p class="md:text-3xl md:text-center text-white text-center">
                         Soy Desarrollador Web Frontend apasionado por transformar ideas en experiencias digitales
                         intuitivas y
                         atractivas. Con experiencia en tecnologías como Vue.js, Bootstrap, TypeScript, Tailwind CSS,
@@ -42,7 +42,9 @@ function flipCard() {
 </script>
 <style scoped>
 .about {
-    height: 90vh;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(135deg, rgba(2, 0, 36, 1) 0%, rgba(8, 97, 73, 1) 66%, rgba(5, 150, 105, 1) 100%);
+
 }
 
 h2,

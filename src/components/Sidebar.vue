@@ -1,7 +1,7 @@
 <template>
-    <aside :class="`${isExpanded ? 'is-expanded' : ''}`">
-        <div class="logo">
-            <img :src="logoURL" alt="Vue" />
+    <aside :class="`${isExpanded ? 'is-expanded' : ''}`" class="">
+        <div class="logo ">
+            <img :src="logoURL" alt="Dino" class="bg-white rounded-[50%]" />
         </div>
 
         <div class="menu-toggle-wrap">
@@ -12,37 +12,37 @@
 
         <h3>Menu</h3>
         <div class="menu">
-            <router-link to="/" class="button">
+            <RouterLink to="/" class="button">
                 <span class="material-icons">home</span>
-                <span class="text">Home</span>
-            </router-link>
-            <router-link to="/about" class="button">
+                <span class="text">Inicio</span>
+            </RouterLink>
+            <RouterLink to="/about" class="button">
                 <span class="material-icons">description</span>
-                <span class="text">About</span>
-            </router-link>
-            <router-link to="/team" class="button">
-                <span class="material-icons">group</span>
-                <span class="text">Team</span>
-            </router-link>
-            <router-link to="/contact" class="button">
-                <span class="material-icons">email</span>
-                <span class="text">Contact</span>
-            </router-link>
+                <span class="text">Sobre Mí</span>
+            </RouterLink>
+            <RouterLink to="/services" class="button">
+                <span class="material-icons">lan</span>
+                <span class="text">Servicios</span>
+            </RouterLink>
+            <RouterLink to="/proyects" class="button">
+                <span class="material-icons">auto_stories</span>
+                <span class="text">Proyectos</span>
+            </RouterLink>
+            <RouterLink to="/contact" class="button">
+                <span class="material-icons">
+                    contacts</span>
+                <span class="text">Contactos</span>
+            </RouterLink>
         </div>
 
         <div class="flex"></div>
 
-        <div class="menu">
-            <router-link to="/settings" class="button">
-                <span class="material-icons">settings</span>
-                <span class="text">Settings</span>
-            </router-link>
-        </div>
+
     </aside>
 </template>
 <script lang="ts" setup>
 import { ref } from 'vue'
-import logoURL from '../assets/logo.png'
+import logoURL from '../assets/dino.png'
 
 const isExpanded = ref<boolean>(localStorage.getItem("is_expanded") === "true")
 
@@ -53,6 +53,8 @@ const toggleMenu = (): void => {
 </script>
 <style scoped>
 aside {
+    height: 100%;
+    position: absolute;
     display: flex;
     flex-direction: column;
     background-color: var(--dark);
@@ -62,6 +64,7 @@ aside {
     min-height: 100vh;
     padding: 1rem;
     transition: 0.2s ease-in-out;
+    z-index: 10;
 }
 
 .flex {
