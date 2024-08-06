@@ -175,11 +175,4 @@ aside.is-expanded .button .material-icons {
 aside.is-expanded .footer {
     opacity: 0;
 }
-
-@media (max-width: 1024px) {
-    aside {
-        position: absolute;
-        z-index: 99;
-    }
-}
 </style>

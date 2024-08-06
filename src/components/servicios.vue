@@ -74,11 +74,6 @@ import agil from "../assets/agil.jpg"
 </script>
 
 <style scoped>
-.services {
-    background: rgb(2, 0, 36);
-    background: linear-gradient(135deg, rgba(2, 0, 36, 1) 0%, rgba(8, 97, 73, 1) 66%, rgba(5, 150, 105, 1) 100%);
-}
-
 h3 {
     font-family: var(--playtone);
     font-weight: 400;

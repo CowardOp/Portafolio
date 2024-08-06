@@ -1,6 +1,6 @@
 <template>
     <div
-        class="about flex justify-center items-center h-[100vh] w-full pt-8 pe-2 ps-[70px] md:ps-[85px] md:p-4 md:flex justify-center items-center">
+        class="services flex justify-center items-center h-[100vh] w-full pt-8 pe-2 ps-[70px] md:ps-[85px] md:p-4 md:flex justify-center items-center">
         <div class="relative w-full lg:w-4/5 xl:w-1/2 h-1/2 md:h-3/4 perspective bg-gray-800 rounded-2xl drop-shadow-2xl overflow-y-auto md:overflow-hidden "
             @click="flipCard">
             <div :class="['card', flipped ? 'flipped' : '']">
@@ -42,12 +42,6 @@ function flipCard() {
 }
 </script>
 <style scoped>
-.about {
-    background: rgb(2, 0, 36);
-    background: linear-gradient(135deg, rgba(2, 0, 36, 1) 0%, rgba(8, 97, 73, 1) 66%, rgba(5, 150, 105, 1) 100%);
-
-}
-
 h2,
 h1,
 h4 {

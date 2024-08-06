@@ -1,5 +1,5 @@
 <template>
-    <div class="saludocont flex flex-col py-5 pe-6 ms:ps-[100px]  gap-8 justify-center ps-[80px]">
+    <div class="services h-[100vh] flex flex-col py-5 pe-6 ms:ps-[100px]  gap-8 justify-center ps-[80px]">
         <div>
             <h1 class="saludo xl:text-7xl md:text-6xl text-5xl text-white">Hola, Soy Brayan Casallas</h1>
             <h2 class="oficio xl:text-4xl md:text-4xl text-3xl text-white">Desarrollado Web - FrontEnd</h2>
@@ -20,12 +20,6 @@ const downloadPdf = () => {
 </script>
 
 <style scoped>
-.saludocont {
-    background: rgb(2, 0, 36);
-    background: linear-gradient(135deg, rgba(2, 0, 36, 1) 0%, rgba(8, 97, 73, 1) 66%, rgba(5, 150, 105, 1) 100%);
-    height: 100vh;
-}
-
 .saludo,
 .oficio {
     font-family: var(--playtone);
