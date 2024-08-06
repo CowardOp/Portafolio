@@ -1,10 +1,11 @@
 <template>
-    <aside :class="`${isExpanded ? 'is-expanded' : ''}`" class="">
-        <div class="logo ">
-            <img :src="logoURL" alt="Dino" class="bg-white rounded-[50%]" />
+    <aside :class="`${isExpanded ? 'is-expanded' : ''}`"
+        class="h-full absolute flex flex-col overflow-hidden p-4 min-h-screen z-10">
+        <div class="mb-4">
+            <img :src="logoURL" alt="Dino" class="bg-white rounded-[50%] w-8" />
         </div>
 
-        <div class="menu-toggle-wrap">
+        <div class="flex flex-end mb-4 relative ">
             <button class="menu-toggle" @click="toggleMenu">
                 <span class="material-icons">keyboard_double_arrow_right</span>
             </button>
@@ -35,7 +36,7 @@
             </RouterLink>
         </div>
 
-        <div class="flex"></div>
+        <div class="grow basis-0 shrink"></div>
 
 
     </aside>
@@ -53,31 +54,13 @@ const toggleMenu = (): void => {
 </script>
 <style scoped>
 aside {
-    height: 100%;
-    position: absolute;
-    display: flex;
-    flex-direction: column;
     background-color: var(--dark);
     color: var(--light);
     width: calc(2rem + 32px);
-    overflow: hidden;
-    min-height: 100vh;
-    padding: 1rem;
     transition: 0.2s ease-in-out;
-    z-index: 10;
+
 }
 
-.flex {
-    flex: 1 1 0%;
-}
-
-.logo {
-    margin-bottom: 1rem;
-}
-
-.logo img {
-    width: 2rem;
-}
 
 .menu-toggle-wrap {
     display: flex;
