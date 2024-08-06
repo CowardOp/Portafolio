@@ -4,7 +4,7 @@
         <h1 class="text-white text-3xl md:text-6xl md:pt-8">Servicios</h1>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-4 gap-5 md:h-2/3 md:w-2/3">
             <div
-                class="flex flex-col md:flex-row gap-4 justify-center items-center col bg-gray-100 p-4 border border-gray-300 rounded-xl shadow-xl p-3">
+                class="flex flex-col md:flex-row-reverse gap-4 justify-center items-center col bg-gray-100 p-4 border border-gray-300 rounded-xl shadow-xl p-3 shadow-2xl">
                 <div class="flex flex-col justify-center items-center">
                     <h3 class="text-2xl font-bold mb-2">Desarrollo FrontEnd</h3>
                     <p class="md:w-4/3 text-center">Ofrezco la creación de interfaces atractivas y responsivas
@@ -18,7 +18,7 @@
                 <img :src="dinofrontURL" alt="dino-front" class="w-[150px] rounded-[50%]">
             </div>
             <div
-                class="flex flex-col md:flex-row gap-4 justify-center items-center col bg-gray-100 p-4 border border-gray-300 rounded-xl shadow-xl">
+                class="flex flex-col md:flex-row gap-4 justify-center items-center col bg-gray-100 p-4 border border-gray-300 rounded-xl shadow-xl shadow-2xl">
                 <img :src="dinoequipoURL" alt="dinoequipo" class="w-[150px] rounded-[50%]">
                 <div class="flex flex-col justify-center items-center">
                     <h3 class="text-2xl font-bold mb-2">Trabajo en equipo</h3>
@@ -32,7 +32,7 @@
                 </div>
             </div>
             <div
-                class="flex flex-col md:flex-row gap-4 justify-center items-center col bg-gray-100 p-4 border border-gray-300 rounded-xl shadow-xl p-3">
+                class="flex flex-col md:flex-row gap-4 justify-center items-center col bg-gray-100 p-4 border border-gray-300 rounded-xl shadow-xl p-3 shadow-2xl">
                 <div class="flex flex-col justify-center items-center">
                     <h3 class="text-2xl font-bold mb-2">Diseño responsive</h3>
                     <p class="md:w-4/3 text-center">Mi enfoque se centra en proporcionar soluciones que mejoren la
@@ -45,7 +45,7 @@
                 <img :src="responsive" alt="responsive" class="w-[150px] rounded-[50%]">
             </div>
             <div
-                class="flex flex-col md:flex-row gap-4 justify-center items-center col bg-gray-100 p-4 border border-gray-300 rounded-xl shadow-xl p-3">
+                class="flex flex-col md:flex-row gap-4 justify-center items-center col bg-gray-100 p-4 border border-gray-300 rounded-xl shadow-xl p-3 shadow-2xl">
                 <div class="flex flex-col justify-center items-center">
                     <h3 class="text-2xl font-bold mb-2">Marcos de trabajo ágiles</h3>
                     <p class="md:w-4/3 text-center">adaptabilidad y entrega continua de valor. Mi objetivo es contribuir
@@ -56,6 +56,7 @@
                         un
                         entorno de desarrollo ágil y dinámico.</p>
                 </div>
+                <img :src="agil" alt="metodologias-agiles" class="w-[150px] rounded-[50%]">
             </div>
         </div>
     </div>
@@ -66,6 +67,7 @@
 import dinofrontURL from "../assets/dinofront.jpg"
 import dinoequipoURL from "../assets/dinoequipo.jpg"
 import responsive from "../assets/responsive.jpg"
+import agil from "../assets/agil.jpg"
 </script>
 
 <style scoped>
