@@ -1,7 +1,7 @@
 <template>
     <div
         class="services flex justify-center items-center h-[100vh] w-full pt-8 pe-2 ps-[70px] md:ps-[85px] md:p-4 md:flex justify-center items-center">
-        <div class="relative w-full lg:w-4/5 xl:w-1/2 h-1/2 md:h-3/4 perspective bg-gray-800 rounded-2xl drop-shadow-2xl overflow-y-auto md:overflow-hidden "
+        <div class="relative w-full lg:w-4/5 xl:w-1/2 h-1/2 md:h-full xl:h-3/4 perspective bg-gray-800 rounded-2xl drop-shadow-2xl overflow-y-auto md:overflow-hidden "
             @click="flipCard">
             <div :class="['card', flipped ? 'flipped' : '']">
                 <div
@@ -10,9 +10,9 @@
                     <h4 class="text-2xl md:text-4xl">Click!</h4>
                 </div>
                 <div
-                    class="card-back absolute w-full  backface-hidden  flex flex-col gap-5 py-5 px-4 md:p-8 xl:gap-11 rounded-2xl">
+                    class="card-back w-full backface-hidden  flex flex-col gap-5 py-5 px-4 pt-[100px] xl:gap-11 rounded-2xl">
                     <h2 class="text-white text-3xl md:text-5xl xl:text-6xl ">Quien soy?</h2>
-                    <p class="md:text-3xl md:text-center text-white text-center">
+                    <p class="md:text-2xl md:text-center text-white text-center">
                         Soy Desarrollador Web Frontend apasionado por transformar ideas en experiencias digitales
                         intuitivas y
                         atractivas. Con experiencia en tecnologías como Vue.js, Bootstrap, TypeScript, Tailwind CSS,
