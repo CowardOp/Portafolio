@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Dorsa&family=Lexend+Deca:wght@100..900&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Viga&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dorsa&family=Lexend+Deca:wght@100..900&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Paytone+One&family=Viga&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dorsa&family=Lexend+Deca:wght@100..900&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Paytone+One&family=Righteous&family=Viga&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+:root {
+  --viga: 'Viga', sans-serif;
+  --playtone: 'Paytone One', sans-serif;
+  --righteous: 'Righteous', sans-serif;
+  --primary: #4ade80;
+  --primary-alt: #22c55e;
+  --grey: #64748b;
+  --dark: #1e293b;
+  --dark-alt: #334155;
+  --light: #f1f5f9;
+  --sidebar-width: 300px;
+}
+
+.services {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    135deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(8, 97, 73, 1) 66%,
+    rgba(5, 150, 105, 1) 100%
+  );
+}
