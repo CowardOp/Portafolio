@@ -1,8 +1,8 @@
 <template>
     <aside :class="`${isExpanded ? 'is-expanded' : ''}`"
         class="h-full absolute flex flex-col overflow-hidden p-4 min-h-screen z-10">
-        <div class="mb-4">
-            <img :src="logoURL" alt="Dino" class="w-8" />
+        <div class="gap-3 mb-4 w-full">
+            <img :src="logoURL" alt="Dino" class="w-14" />
         </div>
 
         <div class="flex flex-end mb-4 relative">
@@ -11,7 +11,7 @@
             </button>
         </div>
 
-        <h3>Menu</h3>
+        <h3>Brayan Casallas <br> Desarrollador FrontEnd</h3>
         <div class="menu">
             <RouterLink to="/" class="button">
                 <span class="material-icons">home</span>
@@ -69,11 +69,11 @@ aside {
     background-color: var(--dark);
     color: var(--light);
     width: calc(2rem + 32px);
-    transition: 0.2s ease-in-out;
+    transition: 0.3s ease-in-out;
 }
 
 .menu-toggle {
-    transition: 0.2s ease-in-out;
+    transition: 0.3s ease-in-out;
 }
 
 .menu-toggle .material-icons {

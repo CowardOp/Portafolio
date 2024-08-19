@@ -6,13 +6,13 @@
             <div class="card_landing relative w-full h-full shadow-xl z-[1] bg-white rounded">
                 <img :src="imgPokemon" alt="pokeapi" class="w-full h-full rounded object-cover">
                 <div class="card-title">
-                    <h6 class="text-2xl text-white">Buscar Pokémon</h6>
+                    <h6 class="text-2xl text-white">API Buscar Pokémon</h6>
                 </div>
             </div>
             <div
                 class="card_info absolute w-[90%] h-[90%] left-0 bottom-0 right-0 top-0 m-auto p-4 z-[0] shadow-xl rounded-xl">
                 <div class="p-1.5 border-b border-white">
-                    <p class="text-xl ">Buscar Pokemon</p>
+                    <p class="text-xl ">API Buscar Pokemon</p>
                     <div class="flex gap-2.5">
                         <div class="flex gap-1.5">
                             <i class="fa-solid fa-cards-blank"></i>
