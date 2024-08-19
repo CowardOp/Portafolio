@@ -2,7 +2,7 @@
     <div
         class="services w-full flex flex-col h-[95vh] items-center pe-2 pb-2 ps-[70px] gap-5 md:gap-12 overflow-y-auto">
         <h1 class="text-white text-3xl md:text-6xl md:pt-8">Servicios</h1>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 gap-5 md:h-2/3 md:w-2/3">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 gap-5 md:h-2/3 md:w-4/5">
             <div
                 class="servicehover flex flex-col gap-4 justify-center items-center col bg-gray-100 p-4 border border-gray-300 rounded-xl shadow-xl p-3 shadow-2xl">
                 <div class="flex flex-col justify-center items-center">
@@ -79,6 +79,17 @@ p {
 h1 {
     font-family: var(--playtone);
     font-weight: 400;
+}
+
+.overflow-y-auto::-webkit-scrollbar {
+    background-color: transparent;
+    width: 15px;
+}
+
+.overflow-y-auto::-webkit-scrollbar-thumb {
+    filter: blur(10px);
+    background-color: #fafafa10;
+    width: 15px;
 }
 
 @media screen and (min-width: 1000px) {

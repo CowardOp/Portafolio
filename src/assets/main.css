@@ -26,3 +26,14 @@
     rgba(5, 150, 105, 1) 100%
   );
 }
+*::-webkit-scrollbar {
+  width: 0;
+}
+aside::-webkit-scrollbar {
+  background: transparent;
+  width: 10px;
+}
+
+.services::-webkit-scrollbar-thumb {
+  width: 10px;
+}

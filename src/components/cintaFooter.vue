@@ -1,6 +1,6 @@
 <template>
-    <footer class="cinta w-full absolute buttom-[-50px] h-[5vh] p-2">
-        <img :src="imgUrl" alt="Dino-logo" class="w-[40px] absolute right-0" />
+    <footer class="cinta w-full absolute buttom-[-50px] p-7">
+        <img :src="imgUrl" alt="Dino-logo" class="w-[40px] absolute right-2" />
     </footer>
 </template>
 
@@ -10,6 +10,8 @@ import imgUrl from '../assets/dino.png'
 
 <style scoped>
 .cinta {
+    display: flex;
+    align-items: center;
     background-color: var(--dark);
 }
 </style>

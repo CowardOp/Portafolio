@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="overflow">
     <!-- <PostContainer /> -->
     <Sidebar />
     <!-- <PostContainer /> -->
@@ -14,4 +14,4 @@ import Sidebar from '../src/components/Sidebar.vue';
 import cintaFooter from '../src/components/cintaFooter.vue';
 </script>
 
-<style scoped></style>
+<style></style>

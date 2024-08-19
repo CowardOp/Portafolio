@@ -176,23 +176,20 @@ aside.is-expanded .button .material-icons {
 }
 
 .whatsapp:hover {
-    font-size: 3rem;
+    transform: scale(1.2);
     color: #25d366;
-    border-radius: 50%;
     transition: all 0.3s ease;
 }
 
 .linkedin:hover {
-    font-size: 3rem;
+    transform: scale(1.2);
     color: #0077b5;
-    border-radius: 50%;
     transition: all 0.3s ease;
 }
 
 .github:hover {
-    font-size: 3rem;
+    transform: scale(1.2);
     color: #f34f29;
-    border-radius: 50%;
     transition: all 0.3s ease;
 }
 

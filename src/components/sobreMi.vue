@@ -1,17 +1,17 @@
 <template>
-    <div class="services h-[95vh] flex justify-center items-center overflow-hidden ps-6">
-        <div class="flip-container perspective relative bg-white w-3/4 md:w-1/2 h-3/4" @click="flipCard">
+    <div class="services h-[95vh] flex justify-center items-center overflow-hidden ps-10 ">
+        <div class="flip-container perspective relative bg-white w-[85%] xl:w-1/2 xl:h-3/4 h-[90%]" @click="flipCard">
             <div :class="['card', flipped ? 'flipped' : '']" class="w-full h-full">
                 <div
-                    class="card-front w-full h-full absolute flex flex-col gap-3 justify-center items-center rounded-xl shadow-xl degrade p-2">
-                    <h1 class="text-6xl md:text-8xl text-white">Quien soy?</h1>
+                    class="card-front w-full h-full absolute flex flex-col gap-5 justify-center items-center rounded-xl shadow-xl degrade p-2">
+                    <h1 class="text-6xl md:text-8xl text-white text-center">Quien soy?</h1>
                     <h2 class="text-white text-2xl hidden md:block">Click!</h2>
                     <h2 class="text-white text-2xl md:hidden block">Tap!</h2>
                 </div>
                 <div
-                    class="card-back w-full h-full flex flex-col gap-2 md:gap-4 absolute justify-center items-center rounded-xl shadow-xl degrade p-2">
+                    class="card-back w-full h-full flex flex-col gap-2 md:gap-4 absolute justify-center items-center rounded-xl shadow-xl px-2 degrade overflow-auto">
                     <h2 class="md:text-4xl text-white text-center">Quien soy?</h2>
-                    <p class="text-center md:text-xl text-white">
+                    <p class="text-center md:text-2xl text-white">
                         Soy Desarrollador Web Frontend apasionado por transformar ideas en experiencias
                         digitales intuitivas y atractivas. Con experiencia en tecnologías como Vue.js,
                         Bootstrap, TypeScript, Tailwind CSS, HTML5, CSS3 y JavaScript, me especializo en crear
@@ -42,7 +42,7 @@ h1,
 h4 {
     font-family: var(--playtone);
     font-weight: 400;
-    animation: glow 0.5s infinite linear alternate;
+    animation: glow 0.6s infinite linear alternate;
 }
 
 p {
