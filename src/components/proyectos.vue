@@ -27,6 +27,12 @@
                         <li class="mb-1.5 text-sm">1.Indica Pokémon o Numero en la pokedex</li>
                         <li class="mb-1.5 text-sm">2.Clickea el icono de busqueda</li>
                         <li class="mb-1.5 text-sm">3.Lee y aprende sobre tu pokémon</li>
+                        <li class="mb-1.5 mt-5 text-sm flex justify-center gap-3"><i
+                                class="fa-brands fa-js text-[2rem] text-yellow-400"></i><i
+                                class="fa-brands fa-html5 text-[2rem] text-orange-400"></i>
+                            <i class="fa-brands fa-css3-alt text-[2rem] text-blue-500"></i><img :src="tailwind"
+                                alt="tailwind" class="w-[2rem]">
+                        </li>
 
                     </ul>
                 </div>
@@ -65,6 +71,11 @@
                         <li class="mb-1.5 text-sm">2.clickeas copiar</li>
                         <li class="mb-1.5 text-sm">3.pegas el texto</li>
                         <li class="mb-1.5 text-sm">4.clickeas desencriptar y listo</li>
+                        <li class="mb-1.5 mt-3 text-sm flex justify-center gap-3"><i
+                                class="fa-brands fa-js text-[2rem] text-yellow-400"></i><i
+                                class="fa-brands fa-html5 text-[2rem] text-orange-400"></i>
+                            <i class="fa-brands fa-css3-alt text-[2rem] text-blue-500"></i>
+                        </li>
 
                     </ul>
                 </div>
@@ -103,6 +114,11 @@
                     <p class="py-2.5 px-4">
                         Creo tu propio curriculum basado en la infomacion que suministres
                     </p>
+                    <div class="mb-1.5 mt-5 text-sm flex justify-center gap-3"><i
+                            class="fa-brands fa-js text-[2rem] text-yellow-400"></i><i
+                            class="fa-brands fa-html5 text-[2rem] text-orange-400"></i>
+                        <i class="fa-brands fa-css3-alt text-[2rem] text-blue-500"></i>
+                    </div>
                 </div>
 
                 <div class="absolute bottom-8 w-[90%] flex gap-4 justify-center">
@@ -134,11 +150,15 @@
 
 
                 <div class="mt-4">
-                    <p class="title">Instrucciones:</p>
-
-                    <p class="py-2.5 px-4">
-                        Creo tu propio curriculum basado en la infomacion que suministres
-                    </p>
+                    <li class="mb-1.5 text-sm">1.Selleciona el numero maximo para adivinar</li>
+                    <li class="mb-1.5 text-sm">2.Digita un numero</li>
+                    <li class="mb-1.5 text-sm">3.Ve si es mayon o menor</li>
+                    <li class="mb-1.5 text-sm">4.Click nuevo juego para reiniciar</li>
+                    <li class="mb-1.5 mt-3 text-sm flex justify-center gap-3"><i
+                            class="fa-brands fa-js text-[2rem] text-yellow-400"></i><i
+                            class="fa-brands fa-html5 text-[2rem] text-orange-400"></i>
+                        <i class="fa-brands fa-css3-alt text-[2rem] text-blue-500"></i>
+                    </li>
                 </div>
 
                 <div class="absolute bottom-8 w-[90%] flex gap-4 justify-center">
@@ -149,6 +169,7 @@
                 </div>
             </div>
         </div>
+        <!-- salon innovaciones nidi -->
     </div>
 
 
@@ -156,6 +177,7 @@
 </template>
 
 <script lang="ts" setup>
+import tailwind from '../assets/tailwind.png'
 import botonServicios from './botonServicios.vue'
 import imgPokemon from '../assets/bucarPokemon.png'
 import encriptador from '../assets/encriptador.png'

@@ -2,7 +2,7 @@
     <aside :class="`${isExpanded ? 'is-expanded' : ''}`"
         class="h-full absolute flex flex-col overflow-hidden p-4 min-h-screen z-10">
         <div class="gap-3 mb-4 w-full">
-            <img :src="logoURL" alt="Dino" class="w-14" />
+            <img :src="logoURL" alt="Dino" class="w-[80px]" />
         </div>
 
         <div class="flex flex-end mb-4 relative">
@@ -49,7 +49,7 @@
 </template>
 <script lang="ts" setup>
 import { ref } from 'vue'
-import logoURL from '../assets/dino.png'
+import logoURL from '../assets/logo-blanco.png'
 
 const isExpanded = ref<boolean>(localStorage.getItem('is_expanded') === 'true')
 const isContact = ref<boolean>(localStorage.getItem('contacts') === 'true')
