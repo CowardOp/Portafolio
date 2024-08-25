@@ -5,7 +5,7 @@
 </template>
 
 <script lang="ts" setup>
-import imgUrl from '../assets/logo-blanco.png'
+import imgUrl from '../img/logo-blanco.png'
 </script>
 
 <style scoped>

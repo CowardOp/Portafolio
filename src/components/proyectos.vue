@@ -150,7 +150,7 @@
 
 
                 <div class="mt-4">
-                    <li class="mb-1.5 text-sm">1.Selleciona el numero maximo para adivinar</li>
+                    <li class="mb-1.5 text-sm">1.Seleciona el numero maximo para adivinar</li>
                     <li class="mb-1.5 text-sm">2.Digita un numero</li>
                     <li class="mb-1.5 text-sm">3.Ve si es mayon o menor</li>
                     <li class="mb-1.5 text-sm">4.Click nuevo juego para reiniciar</li>
@@ -169,6 +169,46 @@
                 </div>
             </div>
         </div>
+        <!-- Busca el clima -->
+        <div class="card relative md:w-[350px] md:h-[400px] w-[300px] h-[400px] ">
+            <div class="card_landing relative w-full h-full shadow-xl z-[1] bg-white rounded">
+                <img :src="weather" alt="pokeapi" class="w-full h-full rounded object-cover">
+                <div class="card-title">
+                    <h6 class="text-2xl text-white">Weather API</h6>
+                </div>
+            </div>
+            <div
+                class="card_info absolute w-[90%] h-[90%] left-0 bottom-0 right-0 top-0 m-auto p-4 z-[0] shadow-xl rounded-xl">
+                <div class="p-1.5 border-b border-white">
+                    <p class="text-xl ">Weather API</p>
+                    <div class="flex gap-2.5">
+                        <div class="flex gap-1.5">
+                            <i class="fa-solid fa-cards-blank"></i>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="mt-4">
+                    <li class="mb-1.5 text-sm">1.Seleciona una ciudad</li>
+                    <li class="mb-1.5 text-sm">2.Selecciona un país</li>
+                    <li class="mb-1.5 text-sm">3.Click al boton de busqueda</li>
+                    <li class="mb-1.5 text-sm">4.Ve el clima de esa ciudad</li>
+                    <li class="mb-1.5 mt-3 text-sm flex justify-center gap-3"><i
+                            class="fa-brands fa-js text-[2rem] text-yellow-400"></i><i
+                            class="fa-brands fa-html5 text-[2rem] text-orange-400"></i>
+                        <i class="fa-brands fa-css3-alt text-[2rem] text-blue-500"></i>
+                    </li>
+                </div>
+
+                <div class="absolute bottom-8 w-[90%] flex gap-4 justify-center">
+                    <botonServicios link="https://github.com/CowardOp/weather.git" buttonText="GitHub"
+                        buttonClass="git-hub" />
+                    <botonServicios link="https://weather-clima-api.netlify.app/" buttonText="Ir a" ññ
+                        buttonClass="page" />
+                </div>
+            </div>
+        </div>
         <!-- salon innovaciones nidi -->
     </div>
 
@@ -177,12 +217,13 @@
 </template>
 
 <script lang="ts" setup>
-import tailwind from '../assets/tailwind.png'
 import botonServicios from './botonServicios.vue'
-import imgPokemon from '../assets/bucarPokemon.png'
-import encriptador from '../assets/encriptador.png'
-import curriculum from '../assets/curriculum.png'
-import adivina from '../assets/adivina-el-numero.png'
+import tailwind from '../img/tailwind.png'
+import weather from '../img/weather.png'
+import imgPokemon from '../img/bucarPokemon.png'
+import encriptador from '../img/encriptador.png'
+import curriculum from '../img/curriculum.png'
+import adivina from '../img/adivina-el-numero.png'
 </script>
 
 <style scoped>

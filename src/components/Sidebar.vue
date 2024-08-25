@@ -49,7 +49,7 @@
 </template>
 <script lang="ts" setup>
 import { ref } from 'vue'
-import logoURL from '../assets/logo-blanco.png'
+import logoURL from '../img/logo-blanco.png'
 
 const isExpanded = ref<boolean>(localStorage.getItem('is_expanded') === 'true')
 const isContact = ref<boolean>(localStorage.getItem('contacts') === 'true')
