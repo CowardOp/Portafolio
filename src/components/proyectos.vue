@@ -81,7 +81,7 @@
                 </div>
 
                 <div class="absolute bottom-8 w-[90%] flex gap-4 justify-center">
-                    <botonServicios link="https://github.com/CowardOp/Encriptador.git" buttonText="GitHub"
+                    <botonServicios link="https://el-encriptador.netlify.app/" buttonText="GitHub"
                         buttonClass="git-hub" />
                     <botonServicios link="https://cowardop.github.io/Encriptador/" buttonText="Ir a"
                         buttonClass="page" />
