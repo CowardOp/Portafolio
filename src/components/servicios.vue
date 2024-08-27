@@ -59,10 +59,10 @@
 </template>
 
 <script lang="ts" setup>
-import dinofrontURL from '../assets/dinofront.jpg'
-import dinoequipoURL from '../assets/dinoequipo.jpg'
-import responsive from '../assets/responsive.jpg'
-import agil from '../assets/agil.jpg'
+import dinofrontURL from './img/dinofront.jpg'
+import dinoequipoURL from './img/dinoequipo.jpg'
+import responsive from './img/responsive.jpg'
+import agil from './img/agil.jpg'
 </script>
 
 <style scoped>
