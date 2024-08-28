@@ -37,3 +37,16 @@ aside::-webkit-scrollbar {
 .services::-webkit-scrollbar-thumb {
   width: 10px;
 }
+
+.anim {
+  animation: rotate 5s infinite linear;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
