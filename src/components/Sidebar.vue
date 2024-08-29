@@ -30,10 +30,10 @@
                 <span class="text">Proyectos</span>
             </RouterLink>
             <button class="button w-full" @click="toggleContact">
-                <span class="material-icons"> contacts</span>
+                <span class="material-icons">contacts</span>
                 <span class="text">Contactos</span>
             </button>
-            <div :class="`${isContact ? 'contacts' : ''}`"
+            <div :class="{ 'contacts': true, 'visible': isContact }"
                 class="contactos w-full flex flex-col pt-5 text-[2.5rem] gap-3 items-center absolute">
                 <a href="https://wa.link/29knsg" target="_blank" class="whatsapp"><i
                         class="fa-brands fa-whatsapp"></i></a>
@@ -47,23 +47,25 @@
         <div class="grow basis-0 shrink"></div>
     </aside>
 </template>
-<script lang="ts" setup>
-import { ref } from 'vue'
-import logoURL from '../img/logo-blanco.png'
 
-const isExpanded = ref<boolean>(localStorage.getItem('is_expanded') === 'true')
-const isContact = ref<boolean>(localStorage.getItem('contacts') === 'true')
+<script lang="ts" setup>
+import { ref } from 'vue';
+import logoURL from '../img/logo-blanco.png';
+
+const isExpanded = ref<boolean>(localStorage.getItem('is_expanded') === 'true');
+const isContact = ref<boolean>(localStorage.getItem('contacts') === 'true');
 
 const toggleMenu = (): void => {
-    isExpanded.value = !isExpanded.value
-    localStorage.setItem('is_expanded', isExpanded.value.toString())
-}
+    isExpanded.value = !isExpanded.value;
+    localStorage.setItem('is_expanded', isExpanded.value.toString());
+};
 
 const toggleContact = (): void => {
-    isContact.value = !isContact.value
-    localStorage.setItem('contacts', isContact.value.toString())
-}
+    isContact.value = !isContact.value;
+    localStorage.setItem('contacts', isContact.value.toString());
+};
 </script>
+
 <style scoped>
 aside {
     background-color: var(--dark);
@@ -171,30 +173,30 @@ aside.is-expanded .button .material-icons {
 }
 
 .contactos {
-    transform: translateX(200px);
-    transition: transform 0.5 ease-out;
+    opacity: 0;
+    position: absolute;
+    /* Asegúrate de que el elemento esté posicionado de forma absoluta */
+    left: 200px;
+    transition: left 0.5s ease-in, opacity 0.5s ease-in;
+}
+
+.contactos.visible {
+    opacity: 1;
+    left: 0;
 }
 
 .whatsapp:hover {
     transform: scale(1.2);
     color: #25d366;
-    transition: all 0.3s ease;
 }
 
 .linkedin:hover {
     transform: scale(1.2);
     color: #0077b5;
-    transition: all 0.3s ease;
 }
 
 .github:hover {
     transform: scale(1.2);
     color: #f34f29;
-    transition: all 0.3s ease;
-}
-
-div.contacts {
-    transform: translateX(0);
-    transition: transform 0.5s ease-in;
 }
 </style>
