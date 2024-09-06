@@ -29,19 +29,19 @@
                 <span class="material-icons">auto_stories</span>
                 <span class="text">Proyectos</span>
             </RouterLink>
-            <button class="button w-full" @click="toggleContact">
+            <button class="button w-full relative" @click="toggleContact">
                 <span class="material-icons">contacts</span>
                 <span class="text">Contactos</span>
+                <div :class="{ 'contacts': true, 'visible': isContact }"
+                    class="contactos w-full flex flex-col pt-5 text-[2.5rem] gap-3 items-center absolute">
+                    <a href="https://wa.link/29knsg" target="_blank" class="whatsapp"><i
+                            class="fa-brands fa-whatsapp"></i></a>
+                    <a href="https://www.linkedin.com/in/brayan-alberto-casallas-rondon-3a84a21b4/" target="_blank"
+                        class="linkedin"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/CowardOp" target="_blank" class="github"><i
+                            class="fa-brands fa-github"></i></a>
+                </div>
             </button>
-            <div :class="{ 'contacts': true, 'visible': isContact }"
-                class="contactos w-full flex flex-col pt-5 text-[2.5rem] gap-3 items-center absolute">
-                <a href="https://wa.link/29knsg" target="_blank" class="whatsapp"><i
-                        class="fa-brands fa-whatsapp"></i></a>
-                <a href="https://www.linkedin.com/in/brayan-alberto-casallas-rondon-3a84a21b4/" target="_blank"
-                    class="linkedin"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="https://github.com/CowardOp" target="_blank" class="github"><i
-                        class="fa-brands fa-github"></i></a>
-            </div>
         </div>
 
         <div class="grow basis-0 shrink"></div>
@@ -176,6 +176,7 @@ aside.is-expanded .button .material-icons {
     opacity: 0;
     position: absolute;
     /* Asegúrate de que el elemento esté posicionado de forma absoluta */
+    top: 60px;
     left: 200px;
     transition: left 0.5s ease-in, opacity 0.5s ease-in;
 }

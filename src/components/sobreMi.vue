@@ -3,13 +3,13 @@
         <div class="flip-container perspective relative bg-white w-[85%] xl:w-1/2 xl:h-3/4 h-[90%]" @click="flipCard">
             <div :class="['card', flipped ? 'flipped' : '']" class="w-full h-full">
                 <div
-                    class="card-front w-full h-full absolute flex flex-col gap-5 justify-center items-center rounded-xl shadow-xl degrade p-2">
+                    class="card-front skeleton w-full h-full absolute flex flex-col gap-5 justify-center items-center rounded-xl shadow-xl degrade p-2">
                     <h1 class="text-6xl md:text-8xl text-white text-center">Quien soy?</h1>
                     <h2 class="text-white text-2xl hidden md:block">Click!</h2>
                     <h2 class="text-white text-2xl md:hidden block">Tap!</h2>
                 </div>
                 <div
-                    class="card-back w-full h-full flex flex-col gap-2 md:gap-4 absolute justify-center items-center rounded-xl shadow-xl px-2 degrade overflow-auto">
+                    class="card-back skeleton w-full h-full flex flex-col gap-2 md:gap-4 absolute justify-center items-center rounded-xl shadow-xl px-2 degrade overflow-auto">
                     <h2 class="md:text-4xl text-white text-center">Quien soy?</h2>
                     <p class="text-center md:text-2xl text-white">
                         Soy Desarrollador Web Frontend apasionado por transformar ideas en experiencias
@@ -76,13 +76,7 @@ p {
     transform: rotateY(180deg);
 }
 
-.degrade {
-    background: rgb(8, 97, 73);
-    background: linear-gradient(135deg,
-            rgba(8, 97, 73, 1) 0%,
-            rgba(26, 54, 54, 1) 57%,
-            rgba(26, 54, 54, 1) 100%);
-}
+
 
 @keyframes glow {
     from {
