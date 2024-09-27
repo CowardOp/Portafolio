@@ -270,6 +270,45 @@
                     </div>
                 </div>
             </div>
+            <div v-if="shouldShowCard('react', 'css')"
+                class="card relative md:w-[350px] md:h-[400px] w-[300px] h-[400px] ">
+                <div class="card_landing relative w-full h-full shadow-xl z-[1] bg-white rounded">
+                    <img :src="calculadora" alt="calculadora" class="w-full h-full rounded object-cover">
+                    <div class="card-title">
+                        <h6 class="text-2xl text-white">Calculadora</h6>
+                    </div>
+                </div>
+                <div
+                    class="card_info absolute w-[90%] h-[90%] left-0 bottom-0 right-0 top-0 m-auto p-4 z-[0] shadow-xl rounded-xl">
+                    <div class="p-1.5 border-b border-white">
+                        <p class="text-xl ">Calculadora</p>
+                        <div class="flex gap-2.5">
+                            <div class="flex gap-1.5">
+                                <i class="fa-solid fa-cards-blank"></i>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="mt-4">
+
+                        <li class="mb-1.5 mt-3 text-sm flex justify-center gap-3"><i
+                                class="fa-brands fa-js text-[2rem] text-yellow-400"></i><i
+                                class="fa-brands fa-html5 text-[2rem] text-orange-400"></i>
+                            <i class="fa-brands fa-css3-alt text-[2rem] text-blue-500"></i>
+                            <img :src="viteJs" alt="viteJs" class="w-[2rem]">
+                            <i class="anim text-[#61dbfb] fa-brands fa-react text-[2rem]"></i>
+                        </li>
+                    </div>
+
+                    <div class="absolute bottom-8 w-[90%] flex gap-4 justify-center">
+                        <botonServicios link="https://github.com/CowardOp/calculadora.git" buttonText="GitHub"
+                            buttonClass="git-hub" />
+                        <botonServicios link="https://calculadora-brayan.netlify.app/" buttonText="Ir a"
+                            buttonClass="page" />
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -288,6 +327,7 @@ import encriptador from '../img/encriptador.png'
 import curriculum from '../img/curriculum.png'
 import adivina from '../img/adivina-el-numero.png'
 import pokeApi2 from '../img/pokeapi20.png'
+import calculadora from '../img/calculadora.png'
 
 // Propiedades de imagen y tecnología
 const selectedTech = ref('all')
